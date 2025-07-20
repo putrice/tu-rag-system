@@ -1,0 +1,7 @@
+[
+    {"id": 1, "query": "What were the total revenues for the most recent fiscal year?"},
+    {"id": 2, "query": "What are the primary risk factors mentioned by the company?"},
+    {"id": 3, "query": "Who is the Chief Executive Officer of the company?"},
+    {"id": 4, "query": "Describe the company's main business segments."},
+    {"id": 5, "query": "What was the net income for the fiscal year?"}
+]
