@@ -6,16 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_llm_response(prompt: str, provider: str = "openai", model: str = "gpt-3.5-turbo") -> str:
-    """
-    Sends a prompt to the OpenAI API and returns the response.
-
-    Args:
-        prompt (str): The prompt to send to the LLM.
-        model (str): The model to use for the request.
-
-    Returns:
-        str: The response from the LLM.
-    """
+    
     if provider == "openai":
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         

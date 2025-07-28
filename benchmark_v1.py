@@ -4,17 +4,6 @@ import time
 from src.main_v1 import run_query
 
 def calculate_cost(input_token, output_token, cost_per_million_tokens=0.0004):
-    """
-    Calculate the cost based on input and output tokens.
-    
-    Args:
-        input_token (int): Number of input tokens.
-        output_token (int): Number of output tokens.
-        cost_per_million_tokens (float): Cost per million tokens.
-        
-    Returns:
-        float: Total cost for the tokens used.
-    """
     cost_per_input = 5.00 / 1_000_000
     cost_per_output = 15.00 / 1_000_000
     cost = (input_token * cost_per_input) + (output_token * cost_per_output)
